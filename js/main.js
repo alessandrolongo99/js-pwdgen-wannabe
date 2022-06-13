@@ -1,7 +1,8 @@
-let myName = prompt('Inserisci nome:');
-let lastName = prompt('Inserisci cognome:');
-let color = prompt('Inserisci colore preferito:');
+const myName = prompt('Inserisci nome:');
+const lastName = prompt('Inserisci cognome:');
+const color = prompt('Inserisci colore preferito:');
+const randNum = 7;
 
-let password = myName + lastName + color;
+const password = myName + lastName + color + randNum;
 
 document.getElementById('password').innerHTML = password;

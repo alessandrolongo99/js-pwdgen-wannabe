@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator(form)</title>
+</head>
+
+<body>
+    <h1>Password Generator</h1>
+
+    <form action="#" method="get" class="formExample">
+        <div class="formExample">
+            <label for="myName">Inserisci nome: </label>
+            <input type="text" name="myName" id="myName" required>
+        </div>
+        <div class="formExample">
+            <label for="lastName">Inserisci cognome: </label>
+            <input type="text" name="lastName" id="lastName" required>
+        </div>
+        <div class="formExample">
+            <label for="color">Inserisci colore preferito: </label>
+            <input type="text" name="color" id="color" required>
+        </div>
+        <div class="formExample">
+            <input type="submit" value="Genera password">
+        </div>
+    </form>
+
+    <div>Nuova password: <span id="password"></span></div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
