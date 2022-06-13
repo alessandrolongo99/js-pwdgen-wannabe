@@ -1,7 +1,14 @@
-let myName = getElementById('myName');
-let lastName = getElementById('lastName');
-let color = getElementById('color');
+window.addEventListener("load", function () {
+    document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-let password = myName + lastName + color;
+        const myName = document.getElementById('myName').value;
+        const lastName = document.getElementById('lastName').value;
+        const color = document.getElementById('color').value;
+        const randNum = 7;
 
-document.getElementById('password').innerHTML = password;
+        const password = myName + lastName + color + randNum;
+
+        document.getElementById('password').innerHTML = password;
+    });
+});
